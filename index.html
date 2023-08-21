@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPS Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nps-widget">
+        <h1>How likely are you to recommend us to a friend or colleague?</h1>
+        <div class="nps-scale">
+            <input type="range" id="npsRange" min="0" max="10">
+        </div>
+        <span id="npsScaleLabel">5</span>
+        <button id="submitBtn">Submit</button>
+        <div id="reasonBox" class="hidden">
+            <textarea id="reasonText" placeholder="Please provide your reason..."></textarea>
+            <button id="reasonSubmit">Submit Reason</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
